@@ -1,8 +1,8 @@
 fun main(args: Array<String>) {
-//Conditions
+//Null safety
+//The !! operator
     var maybeNumber: Int? = 15
-    if (maybeNumber != null)
-        println(maybeNumber * 2)
-    else
-        println("The entered value isn't a number")
+    println(maybeNumber!! * 2)
+    maybeNumber = null
+  // println(maybeNumber!! * 2)
 }

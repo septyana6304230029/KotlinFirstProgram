@@ -14,17 +14,9 @@ fun main(args: Array<String>) {
         println("4 - division")
         val choice = readLine()!!.toInt()
         var result: Double = 0.0
-        when (choice) {
-            1 -> result = a + b
-            2 -> result = a - b
-            3 -> result = a * b
-            4 -> result = a / b
-        }
-        if ((choice > 0) && (choice < 5)) {
-            println("Result: $result")
-        } else {
-            println("Invalid choice")
-        }
+        when (choice) { 1 -> result = a + b; 2 -> result = a - b; 3 -> result = a * b; 4 -> result = a / b }
+        if ((choice > 0) && (choice < 5)) { println("Result: $result") }
+        else { println("Invalid choice") }
         println("Would you like to make another calculation? [yes/no]")
         goOn = readLine()!!
     }

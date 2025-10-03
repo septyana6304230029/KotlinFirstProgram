@@ -13,7 +13,6 @@ fun main(args: Array<String>) {
     var result = 0.0
     if (choice == 1) {
         result = a + b
-
     } else if (choice == 2) {
         result = a - b
     } else if (choice == 3) {

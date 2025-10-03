@@ -1,6 +1,8 @@
 fun main(args: Array<String>) {
-//Elvis Operator ?:
-    var maybeWelcome: String? = "Hello world"
-
-    println(maybeWelcome?.length ?: 0)
+//Safe calling
+//?.let
+    var maybeNumber: Int? = 15
+    maybeNumber?.let { println(it) }
+//The ?. chaining
+//student?.teacher?.supervisor?.name = "Seymour Skinner"
 }
